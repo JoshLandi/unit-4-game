@@ -7,7 +7,7 @@ var wins = 0;
 
 var losses = 0;
 
-var numberToReach = Math.floor(Math.random() * 100) + 1;
+var numberToReach = Math.floor(Math.random() * 100) + 20;
 
 
 
