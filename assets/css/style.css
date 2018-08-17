@@ -1,23 +1,52 @@
 body {
-    background-image: url("https://media.istockphoto.com/photos/abstract-marbled-background-blue-marbling-wavy-lines-picture-id611299474?k=6&m=611299474&s=612x612&w=0&h=S4Uk8TARdt7-Lo07NiLA1hQCmbp_Ax-aUz9aZjOk9Rk=");
-    
+    background-image: url("http://www.kinyu-z.net/data/wallpapers/32/811333.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
-h1 {
-    color: lightgray;
+p {
+    margin: 5px;
+}
+
+.jumbotron {
+    opacity: 0.75;
+    border: 2px solid whitesmoke;
+    color: white;
+}
+
+.crystalImg {
+    border: 2px solid whitesmoke;
+    opacity: 0.9;
+}
+
+#randomNum {
+    border: 2px solid whitesmoke;
+    color: white;
     background-color: rgb(8, 155, 155);
     padding: 20px;
     margin: 20px;
     font-size: 30px;
+    opacity: 0.85;
 }
 
-p {
-    color: lightgray;
+#instructions {
+    color: white;
     background-color: rgb(8, 155, 155);
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 20px;
+    opacity: 0.85;
+    border: 2px solid whitesmoke;
+ 
 }
 
-.crystalImage {
+#totalScore {
+    color: white;
+    background-color: rgb(8, 155, 155);
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    opacity: 0.85;
+    border: 2px solid whitesmoke;
 }

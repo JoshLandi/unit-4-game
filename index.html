@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Crystal Game</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css"></link>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
+        <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+            <title>Crystal Game</title>
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="assets/css/reset.css"></link>
+            <link rel="stylesheet" type="text/css" href="assets/css/style.css"></link>
     </head>
 
     <body>
+        <div class="container">
+            <header>
+                <!--jumboTron!-->
+                <div class="jumbotron" style="background-color: rgb(8, 155, 155)">
+                    <h1 class="display-4" class="text-center">Crystal Game!</h1>
+                </div>
+            </header>
 
-        <header>
-            <h1>Crystal Collector!</h1>
-        </header>
+            <main>
+                <!--Instructions for player-->
+                <div id="instructions" class="row">
+                    <div class="col-sm-12">
+                        <p>You. Yes, You! You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below. Click on crystals to add a specific amount to your score.</p>
+                        <p>If your score matches the random number, you win! If you go over, you lose!</p>
+                        <p>Click on a crystal to discover its value.</p>
+                        <p>The value of crystals change when a new game starts.</p>
+                     </div>
+                </div>
+                    <br />
+                <!--Random Number-->
+                <div id="randomNum">
 
-        <main>
-            <!--Instructions for player-->
-            <div id="instructions">
-                <p>You. Yes, You! You will be given a random number at the start of the game.</p>
-                <p>There are four crystals below. Click on crystals to add a specific amount to your score.</p>
-                <p>If your score matches the random number, you win! If you go over, you lose!</p>
-                <p>Click on a crystal to discover its value.</p>
-                <p>The value of crystals change when a new game starts.</p>
-            </div>
-                <br />
-            <!--Random Number-->
-            <div id="randomNum">
+                    <h1>Number to reach: <span id="numToReach"></span></h1>
 
-                <h1>Number to reach: <span id="numToReach"></span></h1>
+                </div>
+                    <br />
 
-            </div>
-                <br />
+                <div id="crystals">
+                    
+                </div>
+                <!--Wins and Losses counter-->
+                <div id="winLossCount">
 
-            <div id="crystals">
-                
-            </div>
-            <!--Wins and Losses counter-->
-            <div id="winLossCount">
+                    
 
-                
-
-            </div>
-                <br />
-            <!--Crystal Images-->
-            <div id="crystalDiv">
-                
-                <img id="crystal-1" class="crystalImg" src="https://news-media.stanford.edu/wp-content/uploads/2018/08/08140701/crystals_GettyImages.jpg" alt="Purple Crystals" height="200px" width="250px">
-                <img id="crystal-2" class="crystalImg" src="https://images-na.ssl-images-amazon.com/images/I/51snWRfynML._US500_.jpg" alt="Blue Crystals" height="200px" width="250px">
-                <img id="crystal-3" class="crystalImg" src="https://goop.com/wp-content/uploads/2016/11/crystals-img4-1.jpg" alt="Amber Crystals" height="200px" width="250px">
-                <img id="crystal-4" class="crystalImg" src="http://www.crystalshop.co.uk/image/0/132/2104/795/980/370/uploads/images/IMG-3633.jpg" alt="Clear Crystals" height="200px" width="250px">
+                </div>
+                    <br />
+                <!--Crystal Images-->
+                <div id="crystalDiv">
+                    
+                    <img id="crystal-1" class="crystalImg" src="https://news-media.stanford.edu/wp-content/uploads/2018/08/08140701/crystals_GettyImages.jpg" alt="Purple Crystals" height="200px" width="250px">
+                    <img id="crystal-2" class="crystalImg" src="https://images-na.ssl-images-amazon.com/images/I/51snWRfynML._US500_.jpg" alt="Blue Crystals" height="200px" width="250px">
+                    <img id="crystal-3" class="crystalImg" src="https://goop.com/wp-content/uploads/2016/11/crystals-img4-1.jpg" alt="Amber Crystals" height="200px" width="250px">
+                    <img id="crystal-4" class="crystalImg" src="http://www.crystalshop.co.uk/image/0/132/2104/795/980/370/uploads/images/IMG-3633.jpg" alt="Clear Crystals" height="200px" width="250px">
 
 
-            </div>
-                <br />
-            <!--Score Counter-->
-            <div>
-                <p>Your total score is: </p>
-            </div>
+                </div>
+                    <br />
+                <!--Score Counter-->
+                <div id="totalScore">
+                    <p>Your total score is: </p>
+                    <div id="scoreCounter">
 
-            <div id="scoreCounter">
+                    </div>
+                </div>
 
-            </div>
-
-        </main>
-    <!--Javascript link-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type ="text/javascript" src="assets/javascript/game.js"></script>
+            </main>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!--Javascript link-->
+        <script type ="text/javascript" src="assets/javascript/game.js"></script>
     </body>
 
 </html>
