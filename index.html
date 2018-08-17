@@ -26,6 +26,7 @@
                 <!--Instructions for player-->
                 <div id="instructions" class="row">
                     <div class="col-sm-12">
+                        <h1 id="InstH1"><U><b>INSTRUCTIONS</b></U></h1>
                         <p>You. Yes, You! You will be given a random number at the start of the game.</p>
                         <p>There are four crystals below. Click on crystals to add a specific amount to your score.</p>
                         <p>If your score matches the random number, you win! If you go over, you lose!</p>
@@ -35,44 +36,60 @@
                 </div>
                     <br />
                 <!--Random Number-->
-                <div id="randomNum">
+            <div class="row">
+                <div class="col-sm-12" class="text-center">
+                    <div id="randomNum">
 
-                    <h1>Number to reach: <span id="numToReach"></span></h1>
+                        <h1>Number to reach: <span id="numToReach"></span></h1>
 
+                    </div>
                 </div>
-                    <br />
-
-                <div id="crystals">
-                    
-                </div>
-                <!--Wins and Losses counter-->
-                <div id="winLossCount">
-
-                    
-
-                </div>
+            </div>
                     <br />
                 <!--Crystal Images-->
-                <div id="crystalDiv">
-                    
-                    <img id="crystal-1" class="crystalImg" src="https://news-media.stanford.edu/wp-content/uploads/2018/08/08140701/crystals_GettyImages.jpg" alt="Purple Crystals" height="200px" width="250px">
-                    <img id="crystal-2" class="crystalImg" src="https://images-na.ssl-images-amazon.com/images/I/51snWRfynML._US500_.jpg" alt="Blue Crystals" height="200px" width="250px">
-                    <img id="crystal-3" class="crystalImg" src="https://goop.com/wp-content/uploads/2016/11/crystals-img4-1.jpg" alt="Amber Crystals" height="200px" width="250px">
-                    <img id="crystal-4" class="crystalImg" src="http://www.crystalshop.co.uk/image/0/132/2104/795/980/370/uploads/images/IMG-3633.jpg" alt="Clear Crystals" height="200px" width="250px">
-
-
-                </div>
+        <div id="crystalDiv">
+            <div class="row">
+                    <div class="col-sm-3">
+                        <img id="crystal-purple" class="crystalImg" src="https://news-media.stanford.edu/wp-content/uploads/2018/08/08140701/crystals_GettyImages.jpg" alt="Purple Crystals" height="200px" width="250px">
+                    </div>  
+                    <div class="col-sm-3">
+                        <img id="crystal-blue" class="crystalImg" src="https://images-na.ssl-images-amazon.com/images/I/51snWRfynML._US500_.jpg" alt="Blue Crystals" height="200px" width="250px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img id="crystal-amber" class="crystalImg" src="https://goop.com/wp-content/uploads/2016/11/crystals-img4-1.jpg" alt="Amber Crystals" height="200px" width="250px">
+                    </div>
+                    <div class="col-sm-2">
+                        <img id="crystal-clear" class="crystalImg" src="http://www.crystalshop.co.uk/image/0/132/2104/795/980/370/uploads/images/IMG-3633.jpg" alt="Clear Crystals" height="200px" width="250px">
+                    </div>
+            </div>
+        </div>
                     <br />
                 <!--Score Counter-->
                 <div id="totalScore">
-                    <p>Your total score is: </p>
-                    <div id="scoreCounter">
-
+                    <div class="row">
+                        <div class="col-sm-12" class="text-center">
+                            <h1>Your score: <span id="scoreCount"></span></h1>
+                        </div>
                     </div>
                 </div>
 
             </main>
         </div>
+            <br />
+
+        <!--Wins and Losses counter-->
+        <div class="row" class="winLossCount">
+                <!--Wins-->
+                <div class="col-sm-4 col-centered" class="text-center">
+                    <h1 id="wins">Wins: </h1>
+                </div>
+                <!--Losses-->
+                <div class="col-sm-4 col-centered" class="text-center">
+                    <h1 id="losses">Losses: </h1>
+                </div>
+            </div>
+
+            
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
