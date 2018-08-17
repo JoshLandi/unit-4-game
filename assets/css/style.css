@@ -12,11 +12,13 @@ p {
 .jumbotron {
     opacity: 0.65;
     border: 2px solid whitesmoke;
+    border-radius: 50px;
     color: white;
 }
 
 .crystalImg {
     border: 2px solid whitesmoke;
+    border-radius: 50px;
     opacity: 0.9;
 }
 
@@ -27,6 +29,7 @@ p {
 
 #randomNum {
     border: 2px solid whitesmoke;
+    border-radius: 50px;
     color: white;
     background-color: rgb(8, 155, 155);
     padding: 20px;
@@ -43,6 +46,7 @@ p {
     font-size: 20px;
     opacity: 0.85;
     border: 2px solid whitesmoke;
+    border-radius: 50px;
  
 }
 
@@ -54,6 +58,7 @@ p {
     font-size: 30px;
     opacity: 0.93;
     border: 2px solid whitesmoke;
+    border-radius: 50px;
 }
 
 #InstH1 {
@@ -68,6 +73,7 @@ p {
     font-size: 30px;
     opacity: 0.93;
     border: 2px solid whitesmoke;
+    border-radius: 50px;
 }
 
 #losses {
@@ -78,4 +84,5 @@ p {
     font-size: 30px;
     opacity: 0.93;
     border: 2px solid whitesmoke;
+    border-radius: 50px;
 }
