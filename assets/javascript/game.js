@@ -10,8 +10,6 @@ var losses = 0;
 
 var numberToReach = Math.floor(Math.random() * 100) + 20;
 
-var numberOptions = Math.floor(Math.random() * 12) + 1;
-
 
 
 var crystal = {
@@ -31,8 +29,12 @@ var crystal = {
         name: "clear",
         value: 0
     },
-}
+};
 
+    // Scores current/target
+    var currentScore = 0
+    var numberToReach = Math.floor(Math.random() * 100) + 20;
+    
 // ==============================================================================
 //functions
 // ==============================================================================
