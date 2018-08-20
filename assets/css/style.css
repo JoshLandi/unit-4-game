@@ -65,7 +65,7 @@ p {
     color: white;
 }
 
-#wins {
+#win {
     color: white;
     background-color: rgb(8, 155, 155);
     padding: 10px;
@@ -76,7 +76,7 @@ p {
     border-radius: 50px;
 }
 
-#losses {
+#loss {
     color: white;
     background-color: rgb(8, 155, 155);
     padding: 10px;
