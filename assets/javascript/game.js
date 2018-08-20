@@ -42,14 +42,14 @@ var numberToReach = getRandom(19, 120);
 var checkWin = function() {
 
     if (currentScore === numberToReach) {
-        alert("You Win!");
+        alert("You Win! Good for you.");
         wins++
         $("#wins").html(wins);
         startGame();
     }
     
     else if (numberToReach < currentScore) {
-        alert("You Lost!");
+        alert("You Lost! Try again.");
         losses++
         $("#losses").html(losses);
         startGame();
